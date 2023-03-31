@@ -1,0 +1,315 @@
+/* Google Font CDN Link */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Custom Scroll Bar CSS */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0ab919;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #09c816;
+}
+
+
+/* navbar styling */
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav.sticky {
+    background: #0da108;
+    padding: 13px 0;
+}
+
+nav .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+nav .navbar .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #19bf07;
+}
+
+nav.sticky .navbar .logo a {
+    color: #fff;
+}
+
+nav .navbar .menu {
+    display: flex;
+    position: relative;
+}
+
+nav .navbar .menu li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.navbar .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E2431;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover {
+    color: #19bf07;
+}
+
+nav.sticky .menu a {
+    color: #FFF;
+}
+
+nav.sticky .menu a:hover {
+    color: #0E2431;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    background-color: #19bf07;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.submenu li {
+    margin-bottom: 10px;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* Side Navigation Menu Button CSS */
+
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+nav .menu-btn {
+    color: #19bf07;
+}
+
+nav.sticky .menu-btn {
+    color: #FFF;
+}
+
+.navbar .menu .menu-btn {
+    color: #fff;
+}
+
+.navbar .button {
+    margin: 14px 0;
+}
+
+.navbar .button button {
+    outline: none;
+    padding: 0px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #19bf07;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.navbar .button button:hover {
+    border-color: #19bf07;
+    background-color: #fff;
+    color: #19bf07;
+}
+
+
+/* home section styling */
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url("/logo/16.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home .home-content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .text-one {
+    font-size: 25px;
+    color: #0E2431;
+}
+
+.home .text-two {
+    color: #0E2431;
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+
+/*text animation*/
+
+
+/* .text-three {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 5s infinite;
+    border-right: 3px solid black;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 7ch;
+    }
+} */
+
+.container .text {
+    position: relative;
+    color: #09c816;
+}
+
+.home .text-three {
+    font-size: 45px;
+    margin: 5px 0;
+    color: #0E2431;
+}
+
+.home .text-four {
+    font-size: 45px;
+    margin: 5px 0;
+    color: #0E2431;
+}
+
+
+/* .home .text-four::before {
+    font-size: 45px;
+    margin: 5px 0;
+    color: #0E2431;
+} */
+
+.home .button {
+    margin: 14px 0;
+}
+
+.home .button button {
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #4070f4;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.home .button button:hover {
+    border-color: #4070f4;
+    background-color: #fff;
+    color: #4070f4;
+}
+
+
+/* Footer CSS */
+
+footer {
+    background: #0da108;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+
+footer .text span a {
+    font-weight: 500;
+    color: #FFF;
+}
+
+footer .text span a:hover {
+    text-decoration: underline;
+}

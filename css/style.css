@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -81,7 +82,7 @@ nav .navbar .menu li {
 .navbar .menu a {
     font-size: 18px;
     font-weight: 500;
-    color: #0E2431;
+    color: #0ab919;
     padding: 6px 0;
     transition: all 0.4s ease;
 }
@@ -193,7 +194,7 @@ nav.sticky .menu-btn {
 .home {
     height: 100vh;
     width: 100%;
-    background: url("/logo/16.png") no-repeat;
+    /* background: url("/logo/16.png") no-repeat; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -211,36 +212,18 @@ nav.sticky .menu-btn {
 
 .home .text-one {
     font-size: 25px;
-    color: #0E2431;
+    color: #0ab919;
 }
 
 .home .text-two {
-    color: #0E2431;
+    color: #0ab919;
     font-size: 65px;
     font-weight: 600;
     margin-left: -3px;
 }
 
 
-/*text animation*/
 
-
-/* .text-three {
-    width: 0ch;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: text 5s infinite;
-    border-right: 3px solid black;
-}
-
-@keyframes text {
-    0% {
-        width: 0ch;
-    }
-    50% {
-        width: 7ch;
-    }
-} */
 
 .container .text {
     position: relative;
@@ -250,21 +233,65 @@ nav.sticky .menu-btn {
 .home .text-three {
     font-size: 45px;
     margin: 5px 0;
-    color: #0E2431;
+    color: #0ab919;
+}
+
+
+/* text animation started */
+
+.home .text-four {
+    font-size: 40px;
+    margin: 6px 0;
+    color: #0ab919;
+    list-style-type: none;
+}
+
+.home .text-four {
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.text-four li {
+    position: relative;
+    top: o;
+    animation: slide 3s steps(6) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -50px;
+    }
+}
+
+.text-four li span {
+    position: relative;
+}
+
+.text-four li span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 400%;
+    height: 44px;
+    background: #fff;
+    border-left: 2px solid #0ab919;
+    animation: typing 1.5s infinite alternate;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -30px 0 30px;
+    }
 }
 
 .home .text-four {
     font-size: 45px;
     margin: 5px 0;
-    color: #0E2431;
+    color: #0ab919;
 }
 
-
-/* .home .text-four::before {
-    font-size: 45px;
-    margin: 5px 0;
-    color: #0E2431;
-} */
 
 .home .button {
     margin: 14px 0;
@@ -276,7 +303,7 @@ nav.sticky .menu-btn {
     border-radius: 6px;
     font-size: 25px;
     font-weight: 400;
-    background: #4070f4;
+    background: #0ab919;
     color: #fff;
     cursor: pointer;
     border: 2px solid transparent;
@@ -284,9 +311,9 @@ nav.sticky .menu-btn {
 }
 
 .home .button button:hover {
-    border-color: #4070f4;
+    border-color: #0ab919;
     background-color: #fff;
-    color: #4070f4;
+    color: #0ab919;
 }
 
 
